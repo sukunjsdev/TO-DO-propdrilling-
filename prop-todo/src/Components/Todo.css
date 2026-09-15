@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+}
+body.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+body.dark .search-bar {
+  background-color: #1a1a1a;
+  border: 1px white solid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  margin-top: 2%;
+  justify-self: center;
+  font-weight: 500;
+  font-size: 26px;
+}
+.three-top-btn {
+  margin-top: 2%;
+  display: flex;
+  height: 38px;
+  justify-content: space-around;
+}
+.top-two {
+  display: flex;
+  gap: 5%;
+}
+.search-bar {
+  width: 70vw;
+  border-radius: 5px;
+  border: 1px solid #6c63ff;
+  padding: 8px 16px 8px 16px;
+  color: #c3c1e5;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+.search-box {
+  position: relative;
+}
+.mirror {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.all-btn {
+  width: 6rem;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #6c63ff;
+  color: white;
+}
+#checkbox {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #6c63ff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#checkbox:checked {
+  background-color: #6c63ff;
+  border: 2px solid #6c63ff;
+}
+
+#checkbox:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 15px;
+  position: relative;
+  left: 5px;
+  top: 0px;
+}
+.theme-btn {
+  width: 38px;
+  height: 38px;
+  background-color: #6c63ff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.addbtn {
+  position: absolute;
+  background-color: #6c63ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  right: 2%;
+  bottom: 2%;
+}
+.tasks {
+  width: 100vw;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listdata {
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.listdata span {
+  width: 75vw;
+  height: auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+  overflow-x: scroll;
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #6C63FF black;
+}
+.list {
+  list-style: none;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.editdeletebtn {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.editdeletebtn button {
+  width: 18px;
+  height: 18px;
+}
+.all-btn option {
+  color: #6c63ff;
+  background-color: white;
+}
+
+/* ########################################### */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+.modal-box {
+  padding: 1%;
+  background-color: white;
+  height: 30vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+body.dark .modal-box {
+  background-color: black;
+}
+body.dark .modal-box input {
+  background-color: black;
+  color: grey;
+}
+body.dark .modal-btn button {
+  background-color: black;
+}
+.modal-box h2 {
+  font-size: 24px;
+}
+.modal-box input {
+  padding-left: 5px;
+  width: 90%;
+  height: 38px;
+  border: 1px solid #6c63ff;
+}
+.modal-btn {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-btn button {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #6c63ff;
+  background-color: white;
+  color: #6c63ff;
+}
+.modal-box-first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ##########################################3 */
+
