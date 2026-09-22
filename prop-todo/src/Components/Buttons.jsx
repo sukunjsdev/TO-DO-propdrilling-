@@ -1,5 +1,5 @@
-import vector from "../assets/vector.svg";
-import vector2 from "../assets/vector2.svg";
+import searchlight from "../assets/searchlight.svg";
+import searchdark from "../assets/searchdark.svg";
 import moontheme from "../assets/moontheme.svg";
 import suntheme from "../assets/suntheme.svg";
 import addbtn from "../assets/addbtn.svg";
@@ -24,7 +24,7 @@ export const SearchBar = ({
         />
 
         <span className="mirror">
-          <img src={darkMode ? vector2 : vector} alt="Search_bar" />
+          <img src={darkMode ? searchdark : searchlight} alt="Search_bar" />
         </span>
       </div>
 

@@ -5,7 +5,7 @@ export const Header = () => {
   return <h1 className="heading">TODO LIST</h1>;
 };
 
-export const Todo = ({
+export const  Todo = ({
   tasks,
   setTasks,
   setTask,
