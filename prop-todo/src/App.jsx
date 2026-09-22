@@ -10,11 +10,11 @@ const App = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
-  const [Search, setSearch] = useState("");
+  const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
 
   const filteredTasks = useMemo(() => {
-    const searchValue = Search.trim().toLowerCase();
+    const searchValue = search.trim().toLowerCase();
 
     return tasks.filter((item) => {
       const matchesSearch =
@@ -26,7 +26,7 @@ const App = () => {
 
       return matchesSearch && matchesFilter;
     });
-  }, [tasks, Search, filter]);
+  }, [tasks, search, filter]);
 
   return (
     <>
@@ -35,7 +35,7 @@ const App = () => {
         <SearchBar
           darkMode={darkMode}
           setDarkMode={setDarkMode}
-          Search={Search}
+          search={search}
           setSearch={setSearch}
           filter={filter}
           setFilter={setFilter}

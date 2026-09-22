@@ -7,7 +7,7 @@ import addbtn from "../assets/addbtn.svg";
 export const SearchBar = ({
   darkMode,
   setDarkMode,
-  Search,
+  search,
   setSearch,
   filter,
   setFilter,
@@ -17,7 +17,7 @@ export const SearchBar = ({
       <div className="search-box">
         <input
           className="search-bar"
-          value={Search}
+          value={search}
           onChange={(e) => setSearch(e.target.value)}
           type="text"
           placeholder="Search note..."
