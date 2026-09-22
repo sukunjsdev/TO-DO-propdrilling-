@@ -30,26 +30,24 @@ const App = () => {
 
   return (
     <>
-      <div>
-        <Header />
-        <SearchBar
-          darkMode={darkMode}
-          setDarkMode={setDarkMode}
-          search={search}
-          setSearch={setSearch}
-          filter={filter}
-          setFilter={setFilter}
-        />
-        <Todo
-          setTasks={setTasks}
-          setTask={setTask}
-          setEditIndex={setEditIndex}
-          setShowModal={setShowModal}
-          tasks={tasks}
-          filteredTasks={filteredTasks}
-        />
-        <Addbtn setShowModal={setShowModal} />
-      </div>
+      <Header />
+      <SearchBar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        search={search}
+        setSearch={setSearch}
+        filter={filter}
+        setFilter={setFilter}
+      />
+      <Todo
+        setTasks={setTasks}
+        setTask={setTask}
+        setEditIndex={setEditIndex}
+        setShowModal={setShowModal}
+        tasks={tasks}
+        filteredTasks={filteredTasks}
+      />
+      <Addbtn setShowModal={setShowModal} />
       {showModal && (
         <Modal
           setShowModal={setShowModal}
